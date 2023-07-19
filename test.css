@@ -106,16 +106,16 @@ li a:hover{
 
 
  @keyframes air-background{
-    0%, 10.7%{
+    0%{
         background: url("airplan1.jpg");
     }
-    25%, 15.8%{
+    25%{
       background: url("airplan2.jpg");
     }
-    50%, 60.6%{
+    50%{
         background: url("airplan3.jpg");
     }
-    75%, 82.9%{
+    75%{
         background: url("airplan4.jpg");
     }
      90%{
