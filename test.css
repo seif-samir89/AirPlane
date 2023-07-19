@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500;1,700&family=Ubuntu:ital@0;1&display=swap');
+*{
+font-family: 'Ubuntu', sans-serif;
+padding: 0;
+margin: 0;
+}
+body{
+    background-image: linear-gradient(to right , #1f3802, #3e7202ad, #407401, #768305bd, #746803c5, #344e02) ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.container{
+   /* background-image: linear-gradient( center, #01022de5,30% , #00000088 ),url(airplan1.jpg); */
+   width: 90%;
+   height: 640px;
+   background-position: center;
+   animation: air-background 16s linear infinite;
+   -webkit-animation: air-background 16s linear infinite;
+   z-index: 1; 
+   position: relative;
+
+}
+.container::before{ 
+    content: "";
+     position: absolute; 
+     left: 0;
+      top: 0;
+       width: 100%;
+        height: 640px;
+          background-image: linear-gradient( to bottom, #013a14, 25% , #0000001f );
+         z-index: -1;
+        
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  
+}
+.logo{
+font-size: 30px;
+text-transform: uppercase;
+color: #05a1fc;
+text-shadow: 2px 2px 8px  black ;
+
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: #e4002b;
+}
+li a:hover{
+    color: #00D2FC;
+}
+.info{
+    color: white;
+    width: 50%;
+    margin-top: 30px;
+    padding: 30px;
+}
+.info h2{
+    font-size: 50px;
+    text-transform: uppercase ;
+
+}
+.info p{
+    letter-spacing: 4px;
+    width: 350px;
+    padding: 20px 0;
+    
+}
+.info button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 2px solid #0064219f;
+    cursor: pointer;
+    background-color: #009EFA;
+}
+.info button:hover{
+    background-color: transparent;
+    border-color: rgb(0, 170, 128);
+    color: white;
+}
+
+
+ @keyframes air-background{
+    0%, 10.7%{
+        background: url("airplan1.jpg");
+    }
+    25%, 15.8%{
+      background: url("airplan2.jpg");
+    }
+    50%, 60.6%{
+        background: url("airplan3.jpg");
+    }
+    75%, 82.9%{
+        background: url("airplan4.jpg");
+    }
+     90%{
+        background: url("airplan5.jpg");
+    } 
+    100%{
+        background: url("airplan6.jpg");
+    }
+}  
